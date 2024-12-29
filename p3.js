@@ -1,4 +1,5 @@
 let prompt = require('prompt-sync')();
+// for peactice 
 // let student = {
 //     name: "faizan",
 //     age: 20,
