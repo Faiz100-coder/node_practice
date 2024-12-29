@@ -1,0 +1,22 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "MY first Node Tutorials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Faizan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.9.2",
+    "nodemon": "^3.1.9",
+    "prompt": "^1.3.0",
+    "prompt-sync": "^4.2.0",
+    "require": "^2.4.20",
+    "required": "^1.0.0"
+  }
+}
