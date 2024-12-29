@@ -1,5 +1,5 @@
 let prompt = require('prompt-sync')();
-// for peactice 
+// for practical for me  
 // let student = {
 //     name: "faizan",
 //     age: 20,
