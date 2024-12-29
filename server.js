@@ -8,7 +8,7 @@ const MenuItem = require('./models/MenuItem');
 
 const bodyparser = require('body-parser');
 app.use(bodyparser.json());//req.bodyParser
-
+require('dotenv').config();
 
 app.get('/', function (req, res) {
     res.send('server started successfully..... \n \t ..........')
@@ -18,18 +18,16 @@ app.get('/', function (req, res) {
 
 
 
-
-
 // import the router file  of person
 const personroutes = require('./routes/personroutes');
-app.use('/person', personroutes);
+const menuItemRoutes = require('./routes/menuroutes');
 
 
 // import the router file  of menuItem
-const menuItemRoutes = require('./routes/menuroutes');
+app.use('/person', personroutes);
 app.use('/menu', menuItemRoutes);
 
-let PORT = 3000
+let PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`server is running on port number ${PORT}...`);
 })
